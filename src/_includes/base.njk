@@ -41,27 +41,20 @@
 						<span class="img" style="background-image: url({{ authorImage }});"></span>{{ authorName }}</a>
 				</h1>
 				<nav id="colorlib-main-menu" role="navigation">
-					<ul>
-						<li>
-							<a href="/">Home</a>
-						</li>
-						<li>
-							<a href="/collection">Collection</a>
-						</li>
-						<li class="colorlib-active">
-							<a href="/about">About Me</a>
-						</li>
-						<li>
-							<a href="/services">My Services</a>
-						</li>
-
-						<li>
-							<a href="/contact">Contact</a>
-						</li>
-					</ul>
+					{{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
+								listElement: "ul",            
+								listItemElement: "li",        
+								listClass: "",                
+								listItemClass: "",            
+								listItemHasChildrenClass: "", 
+								activeListItemClass: "colorlib-active",  
+								activeKey: eleventyNavigation.key,    
+								showExcerpt: false
+						}) | safe }}
 				</nav>
 
-				<div class="colorlib-footer">
+				<div class="colorlib-footer" style="display:none">
+					{# remove the inline style when ready for newsletter #}
 					<h3>Newsletter</h3>
 					<div class="d-flex justify-content-center">
 						<form action="#" class="colorlib-subscribe-form">
