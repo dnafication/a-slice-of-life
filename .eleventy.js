@@ -1,5 +1,7 @@
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 
+require('dotenv').config();
+
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/css');
   eleventyConfig.addPassthroughCopy('src/fonts');
