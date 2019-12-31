@@ -38,7 +38,7 @@
 			<aside id="colorlib-aside" role="complementary" class="js-fullheight text-center">
 				<h1 id="colorlib-logo">
 					<a href="/">
-						<span class="img" style="background-image: url({{ author[0].logo }}?fit=crop&h=160&w=160&crop=left);"></span>{{ authorName }}</a>
+						<span class="img" style="background-image: url({{ author[0].logo }}?fit=crop&h=160&w=160&crop=left);"></span>{{ author[0].name }}</a>
 				</h1>
 				<nav id="colorlib-main-menu" role="navigation">
 					{{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
