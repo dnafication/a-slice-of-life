@@ -1,10 +1,6 @@
 ---
 layout: "layouts/simple.njk"
 title: "Contact Me"
-authorImage: "/images/author.jpg"
-authorName: "Amrish Manikoth"
-shortName: "Amrish"
-siteName: "A Slice of Life"
 eleventyNavigation: 
   key: Contacts
   order: 4
@@ -31,55 +27,54 @@ eleventyNavigation:
         <h2 class="h3 font-weight-bold">Contact Information</h2>
       </div>
       <div class="w-100"></div>
-      <div class="col-md-3 d-flex">
+      <div class="col-md-4 d-flex">
         <div class="info bg-light p-4">
           <p>
-            <span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+            <span>Address:</span>
+            {{ author[0].address.street }}, {{ author[0].address.suburb }}, {{ author[0].address.state }}
+          </p>
         </div>
       </div>
-      <div class="col-md-3 d-flex">
+      <div class="col-md-4 d-flex">
         <div class="info bg-light p-4">
           <p>
             <span>Phone:</span>
-            <a href="tel://1234567920">+ 1235 2355 98</a>
+            <a href="tel://{{ author[0].phone }}">{{ author[0].phone }}</a>
           </p>
         </div>
       </div>
-      <div class="col-md-3 d-flex">
+      <div class="col-md-4 d-flex">
         <div class="info bg-light p-4">
           <p>
             <span>Email:</span>
-            <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+            <a href="mailto:{{ author[0].email }}">{{ author[0].email }}</a>
           </p>
         </div>
       </div>
-      <div class="col-md-3 d-flex">
-        <div class="info bg-light p-4">
-          <p>
-            <span>Website</span>
-            <a href="#">yoursite.com</a>
-          </p>
-        </div>
-      </div>
+
     </div>
     <div class="row block-9">
       <div class="col-md-6 d-flex">
 
-        <form action="#" class="bg-light p-5 contact-form">
+        <form name="contact-asol" method="POST" data-netlify="true" 
+          netlify-honeypot="bot-field" class="bg-light p-5 contact-form">
           <p>
             If you have any queries or any requests please get in touch using the form below:
           </p>
+          <p class="d-none">
+            <label>Don’t fill this out if you're human: <input name="bot-field"/></label>
+          </p>
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Your Name">
+            <input type="text" name="name" class="form-control" placeholder="Your Name">
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Your Email">
+            <input type="email" name="email" class="form-control" placeholder="Your Email">
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Subject">
+            <input type="text" name="subject" class="form-control" placeholder="Subject">
           </div>
           <div class="form-group">
-            <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+            <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
           </div>
           <div class="form-group">
             <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
