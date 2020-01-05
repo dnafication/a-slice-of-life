@@ -4,7 +4,7 @@ const toMarkdown = require('@sanity/block-content-to-markdown');
 const client = require('../utils/sanityClient');
 
 const getAuthorDetails = async function() {
-  const query = groq`* [_type=='author' && name=='Amrish Manikoth']
+  const query = groq`* [_type=='author']
   {
     name, subtitle, phone, address, bio, email, eyeem, facebook, instagram,
     "image": image.asset->url, "logo": logo.asset->url
@@ -18,8 +18,9 @@ const getAuthorDetails = async function() {
   });
 };
 
-// getAuthorDetails().then(() => {
+// getAuthorDetails().then(data => {
 //   console.log(`author query triggered`);
+//   console.log(data);
 // });
 
 module.exports = getAuthorDetails;
