@@ -7645,7 +7645,9 @@ h1, h2, h3, h4, h5,
       .hero-wrap .author-info, .hero-wrap .author-image {
         width: 30%; } }
   .hero-wrap .author-info {
-    overflow-y: scroll; }
+    overflow-y: scroll; 
+    height: 100vh;
+  }
     @media (max-width: 767.98px) {
       .hero-wrap .author-info {
         width: 70%; } }
