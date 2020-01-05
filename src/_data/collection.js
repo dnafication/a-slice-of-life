@@ -11,14 +11,14 @@ const generateCollection = item => {
 };
 
 const getCollection = async () => {
-  const query = groq`* [_type=='collection'] | order (publishedAt) 
-    {title, categories[0]->{title}, description, "mainImage": mainImage.asset -> url, publishedAt, slug}`;
+  const query = groq`* [_type=='collection'] | order(_createdAt desc)
+  { _createdAt, title, categories[0]->{title}, description, "mainImage": mainImage.asset -> url, publishedAt, slug}`;
   const collection = await client.fetch(query).catch(console.error);
   return collection.map(generateCollection);
 };
 
-// getCollection().then(data => {
-//   data.categories[0];
-// });
+getCollection().then(data => {
+  console.log(data);
+});
 
 module.exports = getCollection;
