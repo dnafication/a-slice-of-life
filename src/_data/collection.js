@@ -17,8 +17,8 @@ const getCollection = async () => {
   return collection.map(generateCollection);
 };
 
-getCollection().then(data => {
-  console.log(data);
-});
+// getCollection().then(data => {
+//   console.log(data);
+// });
 
 module.exports = getCollection;
