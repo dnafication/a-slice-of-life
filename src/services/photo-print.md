@@ -1,6 +1,6 @@
 ---
 title: "Photo Print"
-description: "We printing photos, Duden flows by their place and supplies."
+description: "Like something you see, order your copy - Coming Soon."
 icon: "flaticon-printing-photo"
 tags: services
 ---

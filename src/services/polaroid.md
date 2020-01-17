@@ -1,6 +1,6 @@
 ---
-title: "Polaroid"
-description: "Studio sessions are great, Duden flows by their place and supplies."
+title: "Couple, Pre & Post Wedding Shoots"
+description: "Romantic couple shoots at your favourite location."
 icon: "flaticon-polaroid-pictures"
 tags: services
 ---
