@@ -9846,7 +9846,7 @@ h5,
   font: bold 14px/0.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #000000;
+  background: #ffbb00;
   -webkit-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -9856,7 +9856,7 @@ h5,
   content: '';
   width: 30px;
   height: 2px;
-  background: #000000;
+  background: #ffffff;
   position: absolute;
   left: 0;
   -moz-transition: all 0.2s ease;
