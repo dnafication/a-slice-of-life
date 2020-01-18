@@ -15,7 +15,7 @@ eleventyNavigation:
           <span class="mr-2">
             <a href="/">Home</a>
           </span>
-          <span>Collection</span></p>
+          <span>Gallery</span></p>
         <h1 class="bread">{{ title }}</h1>
       </div>
     </div>
@@ -27,15 +27,15 @@ eleventyNavigation:
 
       {% for item in collection %}
         {% if item.categories.title == "Travel" %}
-        <div class="col-6 col-md-4 pr-2 pl-2 ftco-animate">
-          <a href="{{ item.mainImage }}" title="{{ item.title }}" class="photography-entry img image-popup d-flex justify-content-start align-items-end" style="background-image: url({{item.mainImage}}?w=400);">
-            <div class="overlay"></div>
-            <div class="text ml-4 mb-4">
-              <h3>{{ item.title }}</h3>
-              <span class="tag">{{ item.categories.title }}</span>
-            </div>
-          </a>
-        </div>
+          <div class="col-6 col-md-4 pr-2 pl-2 ftco-animate">
+            <a href="{{ item.mainImage }}" title="{{ item.title }}" class="photography-entry img image-popup d-flex justify-content-start align-items-end" style="background-image: url({{item.mainImage}}?w=400);">
+              <div class="overlay"></div>
+              <div class="text ml-4 mb-4">
+                <h3>{{ item.title }}</h3>
+                <span class="tag">{{ item.categories.title }}</span>
+              </div>
+            </a>
+          </div>
         {% endif %}
       {% endfor %}
 

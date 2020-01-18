@@ -36,11 +36,21 @@ eleventyNavigation:
         </div>
       </div>
       <div class="col-md-4 d-flex">
-        <div class="info bg-light p-4">
-          <p>
-            <span>Phone:</span>
-            <a href="tel://{{ author[0].phone }}">{{ author[0].phone }}</a>
-          </p>
+        <div class="info bg-light p-4 text-center">
+          <ul class="ftco-social">
+            <li class="ftco-animate">
+              <a href="{{ author[0].eyeem }}">
+                <span class="icon-eyeem"><img src='/images/eyeem.svg' style="width:40px"></span></a>
+            </li>
+            <li class="ftco-animate">
+              <a href="{{ author[0].facebook }}">
+                <span class="icon-facebook"></span></a>
+            </li>
+            <li class="ftco-animate">
+              <a href="{{ author[0].instagram }}">
+                <span class="icon-instagram"></span></a>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="col-md-4 d-flex">
