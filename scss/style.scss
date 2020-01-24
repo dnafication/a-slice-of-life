@@ -1,5 +1,11 @@
 @import 'bootstrap/bootstrap';
 @import 'bootstrap/variables';
+@font-face {
+	font-family: "Candara";
+	src: url("../fonts/candara/Candara.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+  }
 
 $font-primary: 'Candara', Candara, Calibri, Segoe, "Segoe UI", Optima, sans-serif;
 $font-secondary: 'Poppins',Arial, sans-serif;
