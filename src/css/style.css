@@ -9486,7 +9486,7 @@ a.text-dark:focus {
 }
 
 body {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Candara', Arial, sans-serif;
   background: #fff;
   font-size: 15px;
   line-height: 1.8;
@@ -9633,7 +9633,7 @@ h5,
   text-decoration: none;
   position: relative;
   padding: 10px 0;
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Candara', Arial, sans-serif;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
