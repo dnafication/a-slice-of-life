@@ -11386,3 +11386,9 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
+
+/*Danger code*/
+.author-info > .desc > p 
+{
+  font-family: 'Alegreya', serif;
+} 
