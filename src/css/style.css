@@ -10000,8 +10000,9 @@ h5,
 }
 .hero-wrap .text {
   z-index: 1;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
+  font-family: Alegreya;
 }
 .hero-wrap .text .img {
   width: 200px;
