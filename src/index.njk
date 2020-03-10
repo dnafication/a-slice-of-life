@@ -40,7 +40,7 @@ eleventyNavigation:
 								<span class="icon-facebook"></span></a>
 						</li>
 						<li class="ftco-animate">
-							<a href="{{ author.instagram }}">
+							<a href="{{ author.instagram }}" target="_blank">
 								<span class="icon-instagram"></span></a>
 						</li>
 					</ul>
@@ -53,7 +53,7 @@ eleventyNavigation:
 	<div class="container">
 		<div class="row justify-content-center mb-2 pb-3">
 			<div class="col-md-7 heading-section heading-section-2 text-center ftco-animate">
-				<h2 class="mb-4">Follow me on <a href="{{ author.instagram }}">Instagram</a>
+				<h2 class="mb-4">Follow me on <a href="{{ author.instagram }}" target="_blank">Instagram</a>
 				</h2>
 			</div>
 		</div>
@@ -61,7 +61,7 @@ eleventyNavigation:
 		<div class="row no-gutters">
 			{% for shortcode in instaPics %}
 				<div class="col-6 col-md ftco-animate">
-					<a href="https://www.instagram.com/p/{{ shortcode }}" class="insta-img" style="background-image: url('https://www.instagram.com/p/{{ shortcode }}/media/');">
+					<a href="https://www.instagram.com/p/{{ shortcode }}" target="_blank" class="insta-img" style="background-image: url('https://www.instagram.com/p/{{ shortcode }}/media/');">
 						<div class="icon d-flex justify-content-center">
 							<span class="icon-instagram align-self-center"></span>
 						</div>
