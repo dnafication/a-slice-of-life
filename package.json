@@ -28,7 +28,7 @@
     "luxon": "^1.21.3",
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.2.5",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "@11ty/eleventy-navigation": "^0.1.3"
