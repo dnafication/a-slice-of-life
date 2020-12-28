@@ -60,9 +60,9 @@ eleventyNavigation:
 		</div>
 
 		<div class="row no-gutters">
-			{% for shortcode in instaPics %}
+			{% for pic in instaPics %}
 				<div class="col-6 col-md ftco-animate">
-					<a href="https://www.instagram.com/p/{{ shortcode }}" target="_blank" class="insta-img" style="background-image: url('https://www.instagram.com/p/{{ shortcode }}/media/');">
+					<a href="{{ pic.shortCode }}" target="_blank" class="insta-img" style="background-image: url('{{ pic.thumbnail }}');">
 						<div class="icon d-flex justify-content-center">
 							<span class="icon-instagram align-self-center"></span>
 						</div>

@@ -8,6 +8,7 @@ Portfolio site of Amrish Manikoth. Perhaps a marketplace in future.
 - `npm install`
 - This site uses `@11ty/eleventy` for building the sources to a website.
 - It has a backend of sanity.io, repo [here](https://github.com/dnafication/a-slice-of-life-sanity)
+- Requires the sanity api key to run queries.
 - It also depends on instagram's public api for image data.
 - It uses netlify to handle the form.
 
